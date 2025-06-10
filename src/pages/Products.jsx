@@ -1,6 +1,4 @@
 
-import { Check, ArrowRight, MessageCircle } from 'lucide-react';
-
 const Products = () => {
   return (
     <div className="bg-white">
@@ -32,7 +30,7 @@ const Products = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="flex items-start space-x-3">
               <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1">
-                <Check className="w-4 h-4 text-white" />
+                <span className="text-white text-sm">✓</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Custom-branded website</h3>
@@ -42,7 +40,7 @@ const Products = () => {
 
             <div className="flex items-start space-x-3">
               <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1">
-                <Check className="w-4 h-4 text-white" />
+                <span className="text-white text-sm">✓</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Booking form with WhatsApp integration</h3>
@@ -52,7 +50,7 @@ const Products = () => {
 
             <div className="flex items-start space-x-3">
               <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1">
-                <Check className="w-4 h-4 text-white" />
+                <span className="text-white text-sm">✓</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Review manager</h3>
@@ -62,7 +60,7 @@ const Products = () => {
 
             <div className="flex items-start space-x-3">
               <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1">
-                <Check className="w-4 h-4 text-white" />
+                <span className="text-white text-sm">✓</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Channel manager add-on</h3>
@@ -72,7 +70,7 @@ const Products = () => {
 
             <div className="flex items-start space-x-3">
               <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1">
-                <Check className="w-4 h-4 text-white" />
+                <span className="text-white text-sm">✓</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Dashboard to track</h3>
@@ -101,15 +99,15 @@ const Products = () => {
               </div>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <span className="text-green-600">✓</span>
                   <span>Custom-branded website</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <span className="text-green-600">✓</span>
                   <span>Basic dashboard</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <span className="text-green-600">✓</span>
                   <span>WhatsApp chat integration</span>
                 </li>
               </ul>
@@ -130,19 +128,19 @@ const Products = () => {
               </div>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <span className="text-green-600">✓</span>
                   <span>All Starter features</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <span className="text-green-600">✓</span>
                   <span>Review manager</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <span className="text-green-600">✓</span>
                   <span>Advanced analytics</span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <span className="text-green-600">✓</span>
                   <span>Priority support</span>
                 </li>
               </ul>
@@ -155,12 +153,12 @@ const Products = () => {
           <div className="text-center mt-12">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2">
-                <MessageCircle className="w-5 h-5" />
+                <span>💬</span>
                 <span>Request Demo</span>
               </button>
               <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2">
                 <span>Get Started</span>
-                <ArrowRight className="w-5 h-5" />
+                <span>→</span>
               </button>
             </div>
           </div>

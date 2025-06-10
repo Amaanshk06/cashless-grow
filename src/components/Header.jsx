@@ -1,7 +1,5 @@
-
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +16,7 @@ const Header = () => {
     { name: 'Contact', path: '/contact' },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path) => location.pathname === path;
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
@@ -49,11 +47,11 @@ const Header = () => {
           {/* Contact Info */}
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-gray-600">
-              <Phone className="w-4 h-4" />
+              <span>📞</span>
               <span>+91-XXXXXXXXXX</span>
             </div>
             <div className="flex items-center space-x-2 text-sm text-gray-600">
-              <Mail className="w-4 h-4" />
+              <span>📧</span>
               <span>hello@cashlesskarma.in</span>
             </div>
           </div>
@@ -63,7 +61,7 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 rounded-lg text-gray-600 hover:text-blue-600 transition-colors"
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? '✕' : '☰'}
           </button>
         </div>
 

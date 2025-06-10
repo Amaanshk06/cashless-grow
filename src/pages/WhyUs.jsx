@@ -1,25 +1,22 @@
-
-import { CheckCircle, Clock, DollarSign, MapPin, TrendingUp, Users, Award, Star } from 'lucide-react';
-
 const WhyUs = () => {
   const features = [
     {
-      icon: CheckCircle,
+      icon: '✓',
       title: 'One-stop solution',
       description: 'Websites, marketing, and recruitment all under one roof'
     },
     {
-      icon: Clock,
+      icon: '⏰',
       title: 'Fast turnaround',
       description: 'Quick delivery with clear communication throughout'
     },
     {
-      icon: DollarSign,
+      icon: '💰',
       title: 'Budget-friendly plans',
       description: 'Affordable solutions designed for small businesses'
     },
     {
-      icon: MapPin,
+      icon: '📍',
       title: 'Based in Goa, operating PAN-India',
       description: 'Local expertise with national reach'
     }
@@ -27,19 +24,19 @@ const WhyUs = () => {
 
   const stats = [
     {
-      icon: Award,
+      icon: '🏆',
       number: '25+',
       label: 'Projects Delivered',
       color: 'blue'
     },
     {
-      icon: Star,
+      icon: '⭐',
       number: '10+',
       label: 'Happy Hospitality Clients',
       color: 'purple'
     },
     {
-      icon: Users,
+      icon: '👥',
       number: '50+',
       label: 'Corporate Roles Hired',
       color: 'green'
@@ -77,7 +74,7 @@ const WhyUs = () => {
             {features.map((feature, index) => (
               <div key={index} className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow duration-200">
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <feature.icon className="w-6 h-6 text-white" />
+                  <span className="text-white text-xl">{feature.icon}</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
@@ -101,7 +98,7 @@ const WhyUs = () => {
             {stats.map((stat, index) => (
               <div key={index} className="text-center bg-white p-8 rounded-xl shadow-md">
                 <div className={`w-16 h-16 bg-${stat.color}-600 rounded-full flex items-center justify-center mx-auto mb-4`}>
-                  <stat.icon className="w-8 h-8 text-white" />
+                  <span className="text-white text-2xl">{stat.icon}</span>
                 </div>
                 <div className="text-4xl font-bold text-gray-900 mb-2">{stat.number}</div>
                 <div className="text-lg text-gray-600">{stat.label}</div>
@@ -122,7 +119,7 @@ const WhyUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">👥</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Personal Touch</h3>
               <p className="text-gray-600">We understand your unique business needs</p>
@@ -130,7 +127,7 @@ const WhyUs = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">📈</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Growth Focus</h3>
               <p className="text-gray-600">Every solution is designed for scalability</p>
@@ -138,7 +135,7 @@ const WhyUs = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">✓</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Quality Assurance</h3>
               <p className="text-gray-600">Rigorous testing and quality control</p>
@@ -146,7 +143,7 @@ const WhyUs = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-orange-600 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">⏰</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Ongoing Support</h3>
               <p className="text-gray-600">We're with you beyond project completion</p>

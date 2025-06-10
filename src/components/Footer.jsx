@@ -1,6 +1,5 @@
 
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -18,7 +17,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <button className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors duration-200 flex items-center space-x-2">
-                <MessageCircle className="w-4 h-4" />
+                <span>💬</span>
                 <span>WhatsApp</span>
               </button>
             </div>
@@ -51,15 +50,15 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-blue-400" />
+                <span className="text-blue-400">📍</span>
                 <span className="text-gray-400">Goa, India</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-blue-400" />
+                <span className="text-blue-400">📞</span>
                 <span className="text-gray-400">+91-XXXXXXXXXX</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-blue-400" />
+                <span className="text-blue-400">📧</span>
                 <span className="text-gray-400">hello@cashlesskarma.in</span>
               </div>
             </div>

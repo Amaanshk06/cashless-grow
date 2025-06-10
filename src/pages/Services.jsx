@@ -1,41 +1,39 @@
 
-import { Globe, Megaphone, MapPin, Camera, Settings, ArrowRight } from 'lucide-react';
-
 const Services = () => {
   const services = [
     {
-      icon: Globe,
+      icon: '🌐',
       title: 'Website Design & Development',
       description: 'Custom designs for hotels, restaurants, salons, and local businesses',
       color: 'blue'
     },
     {
-      icon: Megaphone,
+      icon: '📢',
       title: 'Digital Marketing',
       description: 'Google Ads, Meta Ads, Instagram/Facebook marketing, Content strategy and ad creatives',
       color: 'purple'
     },
     {
-      icon: MapPin,
+      icon: '📍',
       title: 'GMB Optimization',
       description: 'Boost your presence on Google Maps with better visibility',
       color: 'green'
     },
     {
-      icon: Camera,
+      icon: '📷',
       title: 'Virtual 360° Tours',
       description: 'Great for resorts, event venues, restaurants & showrooms',
       color: 'orange'
     },
     {
-      icon: Settings,
+      icon: '⚙️',
       title: 'Custom Software / Dashboards',
       description: 'For internal tracking (e.g., vehicles, staff, leads, payments)',
       color: 'red'
     }
   ];
 
-  const getColorClasses = (color: string) => {
+  const getColorClasses = (color) => {
     const colors = {
       blue: 'from-blue-50 to-blue-100 bg-blue-600',
       purple: 'from-purple-50 to-purple-100 bg-purple-600',
@@ -43,7 +41,7 @@ const Services = () => {
       orange: 'from-orange-50 to-orange-100 bg-orange-600',
       red: 'from-red-50 to-red-100 bg-red-600'
     };
-    return colors[color as keyof typeof colors];
+    return colors[color];
   };
 
   return (
@@ -81,7 +79,7 @@ const Services = () => {
               return (
                 <div key={index} className={`bg-gradient-to-br ${gradientClass} p-8 rounded-xl hover:shadow-lg transition-shadow duration-200`}>
                   <div className={`w-12 h-12 bg-${iconBgClass} rounded-lg flex items-center justify-center mb-4`}>
-                    <service.icon className="w-6 h-6 text-white" />
+                    <span className="text-white text-xl">{service.icon}</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
                   <p className="text-gray-600">{service.description}</p>
@@ -93,7 +91,7 @@ const Services = () => {
           <div className="text-center mt-12">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2 mx-auto">
               <span>Get a Free Quote</span>
-              <ArrowRight className="w-5 h-5" />
+              <span>→</span>
             </button>
           </div>
         </div>

@@ -1,7 +1,3 @@
-
-import { useState } from 'react';
-import { MapPin, Phone, Mail, MessageCircle, Send } from 'lucide-react';
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -11,14 +7,14 @@ const Contact = () => {
     message: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
     console.log('Form submitted:', formData);
@@ -54,7 +50,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-white" />
+                    <span className="text-white text-xl">📞</span>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
@@ -64,7 +60,7 @@ const Contact = () => {
 
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-white" />
+                    <span className="text-white text-xl">📧</span>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Email</h3>
@@ -74,7 +70,7 @@ const Contact = () => {
 
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-white" />
+                    <span className="text-white text-xl">📍</span>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Location</h3>
@@ -85,7 +81,7 @@ const Contact = () => {
 
               <div className="mt-8">
                 <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center space-x-2">
-                  <MessageCircle className="w-5 h-5" />
+                  <span>💬</span>
                   <span>Talk on WhatsApp</span>
                 </button>
               </div>
@@ -204,7 +200,7 @@ const Contact = () => {
                     type="submit"
                     className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
                   >
-                    <Send className="w-5 h-5" />
+                    <span>📧</span>
                     <span>Submit Inquiry</span>
                   </button>
                   
@@ -212,7 +208,7 @@ const Contact = () => {
                     type="button"
                     className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
                   >
-                    <MessageCircle className="w-5 h-5" />
+                    <span>💬</span>
                     <span>Talk on WhatsApp</span>
                   </button>
                 </div>

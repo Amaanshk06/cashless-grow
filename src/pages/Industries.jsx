@@ -1,41 +1,39 @@
 
-import { Building2, UtensilsCrossed, Scissors, MapPin, Rocket } from 'lucide-react';
-
 const Industries = () => {
   const industries = [
     {
-      icon: Building2,
+      icon: '🏢',
       title: 'Hotels, Homestays & Villas',
       description: 'Booking management, website development, and digital marketing for hospitality businesses',
       color: 'blue'
     },
     {
-      icon: UtensilsCrossed,
+      icon: '🍽️',
       title: 'Restaurants, Cafés & Bars',
       description: 'Online ordering systems, menu digitization, and customer engagement solutions',
       color: 'purple'
     },
     {
-      icon: Scissors,
+      icon: '✂️',
       title: 'Salons & Wellness Clinics',
       description: 'Appointment booking systems, customer management, and service promotion',
       color: 'pink'
     },
     {
-      icon: MapPin,
+      icon: '📍',
       title: 'Local Service Businesses',
       description: 'GMB optimization, local SEO, and community engagement strategies',
       color: 'green'
     },
     {
-      icon: Rocket,
+      icon: '🚀',
       title: 'Startups & Corporate Teams',
       description: 'Talent recruitment, digital infrastructure, and growth-focused solutions',
       color: 'orange'
     }
   ];
 
-  const getColorClasses = (color: string) => {
+  const getColorClasses = (color) => {
     const colors = {
       blue: 'from-blue-50 to-blue-100 bg-blue-600',
       purple: 'from-purple-50 to-purple-100 bg-purple-600',
@@ -43,7 +41,7 @@ const Industries = () => {
       green: 'from-green-50 to-green-100 bg-green-600',
       orange: 'from-orange-50 to-orange-100 bg-orange-600'
     };
-    return colors[color as keyof typeof colors];
+    return colors[color];
   };
 
   return (
@@ -80,7 +78,7 @@ const Industries = () => {
               return (
                 <div key={index} className={`bg-gradient-to-br ${gradientClass} p-8 rounded-xl hover:shadow-lg transition-all duration-200 hover:scale-105`}>
                   <div className={`w-12 h-12 bg-${iconBgClass} rounded-lg flex items-center justify-center mb-4`}>
-                    <industry.icon className="w-6 h-6 text-white" />
+                    <span className="text-white text-xl">{industry.icon}</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{industry.title}</h3>
                   <p className="text-gray-600">{industry.description}</p>
@@ -102,7 +100,7 @@ const Industries = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-md">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                <Building2 className="w-6 h-6 text-white" />
+                <span className="text-white text-xl">🏢</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Villa Booking Growth</h3>
               <p className="text-gray-600 mb-4">Helped a Goa villa increase bookings by 200% in 3 months through our SiteCtrl platform</p>
@@ -111,7 +109,7 @@ const Industries = () => {
 
             <div className="bg-white p-8 rounded-xl shadow-md">
               <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
-                <UtensilsCrossed className="w-6 h-6 text-white" />
+                <span className="text-white text-xl">🍽️</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Restaurant Digital Transformation</h3>
               <p className="text-gray-600 mb-4">Implemented online ordering and digital menu for a Mumbai restaurant chain</p>
@@ -120,7 +118,7 @@ const Industries = () => {
 
             <div className="bg-white p-8 rounded-xl shadow-md">
               <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
-                <Rocket className="w-6 h-6 text-white" />
+                <span className="text-white text-xl">🚀</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Startup Talent Acquisition</h3>
               <p className="text-gray-600 mb-4">Successfully placed 50+ candidates across various startups in tech and sales roles</p>

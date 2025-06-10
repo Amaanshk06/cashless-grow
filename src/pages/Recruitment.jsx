@@ -1,6 +1,3 @@
-
-import { Users, Search, FileCheck, UserCheck, ArrowRight, Briefcase } from 'lucide-react';
-
 const Recruitment = () => {
   const roles = [
     'Sales Executives',
@@ -14,22 +11,22 @@ const Recruitment = () => {
 
   const process = [
     {
-      icon: FileCheck,
+      icon: '📋',
       title: 'Share your job requirements',
       description: 'Tell us what you need'
     },
     {
-      icon: Search,
+      icon: '🔍',
       title: 'We source and screen candidates',
       description: 'Our team finds the right talent'
     },
     {
-      icon: Users,
+      icon: '👥',
       title: 'You get shortlisted profiles',
       description: 'With basic assessments included'
     },
     {
-      icon: UserCheck,
+      icon: '✅',
       title: 'We support till onboarding',
       description: 'Complete hiring assistance'
     }
@@ -66,7 +63,7 @@ const Recruitment = () => {
             {process.map((step, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <step.icon className="w-8 h-8 text-white" />
+                  <span className="text-white text-2xl">{step.icon}</span>
                 </div>
                 <div className="mb-2">
                   <span className="text-2xl font-bold text-blue-600">{index + 1}</span>
@@ -91,7 +88,7 @@ const Recruitment = () => {
             {roles.map((role, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center space-x-4">
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                  <Briefcase className="w-6 h-6 text-white" />
+                  <span className="text-white text-xl">💼</span>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">{role}</h3>
@@ -110,7 +107,7 @@ const Recruitment = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2">
                 <span>Hire Talent</span>
-                <ArrowRight className="w-5 h-5" />
+                <span>→</span>
               </button>
               <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200">
                 Request Sample Profiles
@@ -131,7 +128,7 @@ const Recruitment = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Search className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">🔍</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Pre-screened Candidates</h3>
               <p className="text-gray-600">All candidates are vetted and assessed before reaching you</p>
@@ -139,7 +136,7 @@ const Recruitment = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">👥</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Fast Turnaround</h3>
               <p className="text-gray-600">Quick hiring process without compromising on quality</p>
@@ -147,7 +144,7 @@ const Recruitment = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <UserCheck className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">✅</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Post-hire Support</h3>
               <p className="text-gray-600">We support you through the onboarding process</p>

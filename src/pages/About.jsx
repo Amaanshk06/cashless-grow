@@ -1,6 +1,3 @@
-
-import { Target, Eye, Heart, Users, Award, MapPin } from 'lucide-react';
-
 const About = () => {
   return (
     <div className="bg-white">
@@ -27,7 +24,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">🎯</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600">
@@ -37,7 +34,7 @@ const About = () => {
 
             <div className="text-center p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
               <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Eye className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">👁️</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-600">
@@ -47,7 +44,7 @@ const About = () => {
 
             <div className="text-center p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
               <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">❤️</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Values</h3>
               <p className="text-gray-600">
@@ -105,7 +102,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">👥</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Team Spirit</h3>
               <p className="text-gray-600">Collaborative and supportive work environment</p>
@@ -113,7 +110,7 @@ const About = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">🏆</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Excellence</h3>
               <p className="text-gray-600">Commitment to delivering quality solutions</p>
@@ -121,7 +118,7 @@ const About = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">❤️</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Client Focus</h3>
               <p className="text-gray-600">Your success is our primary motivation</p>
@@ -129,7 +126,7 @@ const About = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-white" />
+                <span className="text-white text-2xl">📍</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Local Roots</h3>
               <p className="text-gray-600">Proud to be based in Goa, serving all of India</p>
