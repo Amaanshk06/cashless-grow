@@ -5,7 +5,7 @@ import Home from "./pages/Home.js";
 import Products from "./pages/Products.js";
 import Services from "./pages/Services.js";
 import Recruitment from "./pages/Recruitment.js";
-import Industries from "./pages/Industries.js";
+import Industries from "./pages/Industries.jsx";
 import WhyUs from "./pages/WhyUs.js";
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
